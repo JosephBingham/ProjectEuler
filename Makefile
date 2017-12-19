@@ -1,5 +1,5 @@
 git:
 	git add *
 	git commit -m "working"
-	git push origin master
+	git push master master
 
