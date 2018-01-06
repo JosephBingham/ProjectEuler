@@ -21,12 +21,7 @@ sub is_prime{
 	return 1;
 
 }
-#if(is_prime(1)){
-#	say "1 is prime";
-#}
-#else{
-#	say "we good";
-#}
+
 my $sum = 0;
 my $i = 0;
 while($i++ < 2000000){
