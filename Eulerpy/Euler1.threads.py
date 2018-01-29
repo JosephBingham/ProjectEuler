@@ -9,19 +9,19 @@ def sumer(delta):
 	sum1 = q.get()
 	print "starting sumer"
 	step = 0
-	while(step < 1000):
+	while step < 1000:
 		sum1 = sum1 + step
 		step = step + delta
 #		print sum1
 	q.put(sum1)
 
 def subtracter(delta):
-	sum2 = q.get()	
+	sum2 = q.get()
 	print "starting subracter"
 	step = 0
 	while step < 1000:
 		sum2 = sum2 - step
-		step = step + delta 
+		step = step + delta
 #		print sum2
 	q.put(sum2)
 	print sum2

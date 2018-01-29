@@ -1,4 +1,4 @@
-#include<stdio.h> 
+#include<stdio.h>
 int  stuffy(void){
 	int sum = 0;
 	int previous = 0;
@@ -6,7 +6,7 @@ int  stuffy(void){
 	int temp = 1;
 	while(current<4000000){
 		temp = current;
-		current = current + previous;		
+		current = current + previous;
 		previous = temp;
 		if(current % 2 == 0 ){
 			sum = sum + current;
