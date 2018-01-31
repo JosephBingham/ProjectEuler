@@ -10,4 +10,4 @@ for(i; i < 1000; i += 1){
 	}
 }
 
-document.write(sum);
+console.log(sum);

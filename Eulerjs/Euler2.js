@@ -7,12 +7,12 @@ sum = 0;
 
 while(current < 4000000){
 	if(!(current % 2)){
-	sum += current;
+    	sum += current;
 	}
 	holder = next;
 	next += current;
 	current = holder;
 }
-	document.write(sum);
+console.log(sum);
 
 
