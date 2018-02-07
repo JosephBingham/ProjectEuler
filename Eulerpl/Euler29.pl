@@ -3,14 +3,19 @@
 use strict;
 use warnings;
 use 5.010;
+use List::Util qw(sum);
 
-my @powers = {4, 8};
+my $n = 100;
+my @arr = "";
 
-my %hash{@powers} = () ;
-for(my $i = 2; $i < 101; $i++){
-	for(my $j = 2; $j < 101; $j++){
-		%hash {$i**$j} = $i ** $j;
-	}
+for (my $i = 0; $i < $n ** $n; $i++) {
+    push @arr, 0;
 }
 
-say %hash;
+for (my $i = 2; $i < $n; $i++) {
+    for (my $j = 2; $j < $n; $j++) { 
+        @arr[$i**$j] = 1;
+    }
+}
+
+say sum <@arr>;
