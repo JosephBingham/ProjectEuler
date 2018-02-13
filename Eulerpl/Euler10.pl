@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 use 5.010;
-use POSIX;
+#use POSIX;
 
 sub is_prime{
 	my $num = shift;
