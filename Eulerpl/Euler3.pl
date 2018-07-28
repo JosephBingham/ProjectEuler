@@ -16,13 +16,13 @@ for(my $j = 1; $j < $number ** .5 ; $j += 2){
 
 
 sub isPrime{
-my $param = shift;
-print "$param\n";
+	my $param = shift;
+	print "$param\n";
 
-for (my $i=2; $i< $param; $i ++){
-	if ($param % $i == 0){
-		return 0;  
+	for (my $i=2; $i< $param; $i ++){
+		if ($param % $i == 0){
+			return 0;  
+		}
 	}
-}
 	return 1;
 }
